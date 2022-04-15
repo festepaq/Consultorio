@@ -345,6 +345,13 @@ height: 50px;
 }
 
 
+.map-responsive{
+  max-width: 600px;
+  width: 90%;
+  height: 500px;
+}  
+
+
 
 .container_historia {
 	position: fixed;
@@ -581,6 +588,7 @@ p{
   flex-direction: column;
   align-items: center;
   width: 100%;
+  text-align: center;
 }
 
 .content p{
