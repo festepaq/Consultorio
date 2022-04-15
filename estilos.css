@@ -1,0 +1,730 @@
+@charset "UTF-8";
+
+/* Se define el borde y se indica la fuente de la letra a usar */
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.ancla {padding-top: 150px; 
+}
+
+
+/*---------------------------------- Parte para el header -----------------------------------*/
+
+/* Se define el header y sus características principales */
+header {
+  background-color: white; 
+  width: 100%;
+  height: 102px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+/* Se define la navegación y sus características principales */
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  max-width: 980px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow: 0px 2px #1f6191 ;
+   
+}
+
+/* Se define la clase donde va a estar el logo */
+.brand_top{
+	margin-top: 5px;
+}
+
+/* Se definen las características principales de la imagen del logo */
+.brand_top img{
+	margin-top: 10px;
+	margin-left: 5%;
+	margin-bottom: 0;
+	width: 200px;
+	height: 80px;
+}
+
+/* Se definen las caracteristicas de la lista para esa clase topnav */
+.menu{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Se definen las caracteristicas del elemento de la lista para esa clase topnav */
+.menu li{
+	padding: 0 10px;
+
+}
+/* Se definen las caracteristicas de los links de la lista para esa clase topnav */
+.menu a {
+  color: #1f6191;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px 10px;
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.5s;
+  border-radius: 0.5em;
+  line-height: 80px;
+  position: relative;
+}
+
+/* Se definen las caracteristicas para el cambio de color on hover */
+.menu a:hover {
+  background-color: #c5c5c5;
+  color: #0c6099;
+}
+
+.open-menu{
+  color: #175a9e;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  float: right;
+  line-height: 80px;
+
+  display: none;
+}
+
+.close-menu{
+  color: #175a9e;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  float: right;
+  line-height: 80px;
+
+  display: none;
+}
+
+
+
+
+/*---------------------------------- Parte para el Body -----------------------------------*/
+
+/* Se definen las caracteristicas para el body*/
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Se definen las caracteristicas para los titulos, subtitulos y parrafos generales*/
+h1{
+	color: #01335c
+}
+
+h2{
+	color: #01335c
+
+}
+h3{
+	color: #01335c;
+	font-size: 30px;
+}
+
+p{
+	color: #01335c;
+	text-align: center;
+}
+
+ .p1{
+	color: #01335c;
+	font-weight: bold;
+
+ 
+}
+
+
+/*---------------------------------- Parte para el Slider -----------------------------------*/
+
+/* Se definen las caracteristicas para el slider */
+.slider{
+  width: 60%; 
+  height: 500px;
+  overflow: hidden;
+}
+/* Se definen las caracteristicas para la lista del slider */
+.slider ul{
+    display: flex;
+    animation: cambio 20s infinite linear;
+    width: 200%;
+}
+
+/* Se definen las caracteristicas para el elemento de la lista del slider */
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+
+/* Se definen las caracteristicas para la imagen del slider */
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+/* Se definen las transiciones del slider */
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    
+    25%{margin-left: -50%;}
+    45%{margin-left: -50%;}
+    
+    50%{margin-left: -100%;}
+    70%{margin-left: -100%;}
+    
+    75%{margin-left: -150%;}
+    100%{margin-left: -150%;}
+}
+
+
+
+/*---------------------------------- Parte para los contenedores -----------------------------------*/
+
+
+/* Primer contenedor */
+.content {
+	padding-top: 120px;
+  background-color: white;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.content p{
+	padding-left: 5%;
+	padding-right: 5%;
+	margin: auto;
+	flex-direction: column;
+}
+
+.content h2{
+	margin: auto;
+}
+
+/* Segundo contenedor */
+
+.container_personal{
+padding-top: 100px;
+ background-color: white;
+  overflow: auto;
+  width: 70%;
+  margin-left: 15%;
+  justify-content: center;
+  margin-top: 0px;
+  padding-top: 10px;
+}
+
+.personal{
+	float: left;
+	width: 30%;
+	height: 320px;
+	background-color: white;
+	min-width: 300px;
+	margin-left: 10%;
+	display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personal img{
+width: 90%;
+height: 90%;
+}
+
+.personal2{
+	float: right;
+	width: 50%;
+	height: 300px;
+	background-color: white;
+	min-width: 300px;
+	text-align: center;
+
+}
+
+.personal2 p{
+	font-size: 20px;
+}
+
+
+
+/* Tercer contenedor */
+.container_tratamiento {
+	padding-top: 100px;
+  background-color: white;
+  width: 90%;
+  margin-left: 5%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.container_tratamiento ul{
+ list-style: none;
+ margin-left: auto;
+ margin-right: auto;
+ text-align: center;
+padding-left: 0;
+ }
+
+.container_tratamiento ul li{
+
+width: 300px;
+height: 200px;
+background-color: #ddedf6;
+margin: 40px 30px;
+box-sizing: border-box;
+border: 2px solid #767b81;
+display: inline-block;
+}
+
+.container_tratamiento ul li .title{
+width: 100%;
+height: 50px;
+line-height: 50px;
+background: #3072a1;
+text-align: center;
+color: white;
+
+}
+
+
+
+
+/*---------------------------------- Parte para Whatsapp -----------------------------------*/
+
+.whatsapp{
+	position: fixed;
+	right: 5%;
+	bottom: 5%;
+}
+
+.whatsapp img{
+width: 50px;
+height: 50px;
+}
+
+
+/*---------------------------------- Parte para el Footer -----------------------------------*/
+/* Style the footer */
+.footer {
+  background-color: #0C65B6;
+  padding: 10px;
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer ul{
+	display: inline-block;
+	text-decoration: none;
+}
+
+.footer ul li{
+	color: white;
+	padding-left: 20px;
+}
+
+.footer ul li a{
+	color: white;
+}
+
+
+
+.container_historia {
+	position: fixed;
+	margin-top: 105px;
+  background-color: white;
+  width: 70%;
+  height: 25px;
+  margin-left: 15%;
+}
+
+
+.nav_historia {
+  overflow: hidden;
+  justify-content: space-between;
+  background-color: #1f6191; 
+  width: 100%;
+  height: 25px;
+  margin: auto;
+}
+
+
+/* Se definen las caracteristicas de la lista para esa clase topnav */
+.nav_historia ul{
+	margin-top: 0px;
+}
+
+/* Se definen las caracteristicas del elemento de la lista para esa clase topnav */
+.nav_historia ul li{
+	display: inline-block;
+	margin-left: 10px;
+
+}
+/* Se definen las caracteristicas de los links de la lista para esa clase topnav */
+.nav_historia ul li a {
+  display: flex;
+  color: white;
+  text-align: center;
+  font-size: 17px;
+  padding: 1px 10px;
+  margin-top: 0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Se definen las caracteristicas para el cambio de color on hover */
+.nav_historia ul li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+ /* ----------------------------------------------------*/
+ /* Para visualizar en celular*/
+ /* ----------------------------------------------------*/
+
+@media (max-width: 950px){
+
+  header {
+    background-color: white; 
+    width: 100%;
+    height: 102px;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  
+  /* Se define la navegación y sus características principales */
+  .topnav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    max-width: 980px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0px 2px #1f6191 ;
+     
+  }
+
+/* Se define la clase donde va a estar el logo */
+.brand_top{
+	margin-top: 5px;
+}
+
+/* Se definen las características principales de la imagen del logo */
+.brand_top img{
+	margin-top: 10px;
+    margin-left: 5%;
+    margin-bottom: 0;
+    width: 150px;
+    height: 60px;
+}
+
+/* Se definen las caracteristicas de la lista para esa clase topnav */
+.menu{
+  flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: #1f6191;
+    height: 100%;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    
+    
+}
+
+/* Se definen las caracteristicas del elemento de la lista para esa clase topnav */
+.menu li{
+	padding-top: 0px;
+
+}
+/* Se definen las caracteristicas de los links de la lista para esa clase topnav */
+.menu a {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px 10px;
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.5s;
+  border-radius: 0.5em;
+  line-height: 80px;
+}
+
+/* Se definen las caracteristicas para el cambio de color on hover */
+.menu a:hover {
+  background-color: #c5c5c5;
+  color: #0c6099;
+}
+
+.open-menu{
+  color: #0c6099;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  float: right;
+  line-height: 80px;
+
+  display: none;
+}
+
+.close-menu{
+  color: white;
+  background: none;
+  border: none;
+  font-size: 35px;
+  padding: 0 20px;
+  float: right;
+  line-height: 80px;
+
+  display: none;
+}
+
+.open-menu,
+  .close-menu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .close-menu {
+    align-self: flex-end;
+    padding: 2px 38px;
+  }
+
+  .menu_opened {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .open-menu:focus:not(:focus-visible),
+  .close-menu:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+
+
+/*---------------------------------- Parte para el Body -----------------------------------*/
+
+/* Se definen las caracteristicas para el body*/
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Se definen las caracteristicas para los titulos, subtitulos y parrafos generales*/
+h1{
+	color: #01335c
+}
+
+h2{
+	color: #01335c
+
+}
+h3{
+	color: #01335c;
+	font-size: 20px;
+  text-align: center;
+}
+
+p{
+	color: #01335c;
+	text-align: center;
+}
+
+ .p1{
+	color: #01335c;
+	font-weight: bold;
+
+ 
+}
+
+
+
+/*---------------------------------- Parte para los contenedores -----------------------------------*/
+
+
+/* Primer contenedor */
+.content {
+	padding-top: 80px;
+  background-color: white;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.content p{
+	padding-left: 5%;
+	padding-right: 5%;
+	margin: auto;
+	flex-direction: column;
+}
+
+.content h2{
+	margin: auto;
+}
+
+/* Segundo contenedor */
+
+.container_personal{
+padding-top: 100px;
+ background-color: white;
+  overflow: auto;
+  width: 70%;
+  margin-left: 15%;
+  justify-content: center;
+  margin-top: 0px;
+  padding-top: 10px;
+}
+
+.personal{
+	float: left;
+	width: 30%;
+	height: 320px;
+	background-color: white;
+	min-width: 300px;
+	margin-left: 10%;
+	display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personal img{
+width: 90%;
+height: 90%;
+}
+
+.personal2{
+	float: right;
+	width: 50%;
+	height: 300px;
+	background-color: white;
+	min-width: 300px;
+	text-align: center;
+
+}
+
+.personal2 p{
+	font-size: 20px;
+}
+
+
+
+/* Tercer contenedor */
+.container_tratamiento {
+	padding-top: 100px;
+  background-color: white;
+  width: 90%;
+  margin-left: 5%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.container_tratamiento ul{
+ list-style: none;
+ margin-left: auto;
+ margin-right: auto;
+ text-align: center;
+padding-left: 0;
+ }
+
+.container_tratamiento ul li{
+
+width: 300px;
+height: 200px;
+background-color: #ddedf6;
+margin: 40px 30px;
+box-sizing: border-box;
+border: 2px solid #767b81;
+display: inline-block;
+}
+
+.container_tratamiento ul li .title{
+width: 100%;
+height: 50px;
+line-height: 50px;
+background: #3072a1;
+text-align: center;
+color: white;
+
+}
+
+
+
+
+/*---------------------------------- Parte para el Footer -----------------------------------*/
+/* Style the footer */
+.footer {
+  background-color: #0C65B6;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 0;
+}
+
+.footer ul{
+	display: inline-block;
+	text-decoration: none;
+  padding-top: 0;
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 5%;
+}
+
+.footer ul li{
+	color: white;
+	padding-left: 0px;
+  font-size: 0.8em;
+  list-style: none;
+}
+
+.footer ul li a{
+	color: white;
+}
+
+
+/*---------------------------------- Parte para Whatsapp -----------------------------------*/
+
+.whatsapp{
+	position: fixed;
+	right: 3%;
+	bottom: 2%;
+}
+
+.whatsapp img{
+width: 45px;
+height: 45px;
+}
+
+}
