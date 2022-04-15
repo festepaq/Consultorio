@@ -711,16 +711,16 @@ color: white;
   width: 70%;
   height: 25px;
   margin-left: 15%;
+  display: none;
+  pointer-events: none;
 }
 
 
 .nav_historia {
-  display: flex;
   background-color: #1f6191; 
   width: 100%;
   height: 25px;
   margin: auto;
-  display: none;
   
 }
 
