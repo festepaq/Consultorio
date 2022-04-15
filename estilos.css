@@ -574,7 +574,7 @@ p{
 
 /* Primer contenedor */
 .content {
-	padding-top: 80px;
+	padding-top: 100px;
   background-color: white;
   overflow: auto;
   display: flex;
@@ -600,11 +600,14 @@ p{
 padding-top: 100px;
  background-color: white;
   overflow: auto;
-  width: 70%;
-  margin-left: 15%;
-  justify-content: center;
-  margin-top: 0px;
-  padding-top: 10px;
+  width: 90%;
+  padding-top: 0px;
+  margin: 0 auto;
+  display: flex;
+	flex-direction: column;
+ align-items: center;
+  
+  
 }
 
 .personal{
@@ -613,24 +616,25 @@ padding-top: 100px;
 	height: 320px;
 	background-color: white;
 	min-width: 300px;
-	margin-left: 10%;
+	margin-left: 0;
 	display:flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .personal img{
-width: 90%;
-height: 90%;
+width: 100%;
+height: 100%;
 }
 
 .personal2{
 	float: right;
 	width: 50%;
-	height: 300px;
+  height: auto;
 	background-color: white;
 	min-width: 300px;
 	text-align: center;
+  overflow: hidden;
 
 }
 
