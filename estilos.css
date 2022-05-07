@@ -169,10 +169,10 @@ p{
 /*---------------------------------- Parte para el Slider -----------------------------------*/
 
 .flexslider{
-  width: 50%;
+  width: 60%;
   position: relative;
   z-index: 0;
-  margin-left: 25%;
+  margin-left: 20%;
 
 }
 
@@ -290,12 +290,13 @@ p{
 
 
 
+
 /*---------------------------------- Parte para los contenedores -----------------------------------*/
 
 
 /* Primer contenedor */
 .content {
-	padding-top: 100px;
+	padding-top: 110px;
   overflow: auto;
   display: flex;
   flex-direction: column;
@@ -308,6 +309,12 @@ p{
 .content img{
   width: 80%;
   max-width: 400px;
+}
+
+.content img.mapa_navegacion{
+ width: 95%;
+ margin: auto;
+  max-width: 800px;
 }
 
 .content p{
@@ -425,8 +432,8 @@ color: white;
 }
 
 .whatsapp img{
-width: 50px;
-height: 50px;
+width: 60px;
+height: 60px;
 }
 
 
@@ -511,11 +518,12 @@ height: 50px;
   color: black;
 }
 
- /* ----------------------------------------------------*/
- /* Para visualizar en celular*/
- /* ----------------------------------------------------*/
 
-@media (max-width: 950px){
+/* ------------------------------------------------------------------------------------------------------------------------------*/
+ /* Para visualizar en tablet*/
+ /* ------------------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width:800px) and (max-width:1200px){ 
 
   header {
     background-color: white; 
@@ -540,12 +548,418 @@ height: 50px;
 
 /* Se define la clase donde va a estar el logo */
 .brand_top{
-	margin-top: 5px;
+  margin-top: 5px;
 }
 
 /* Se definen las características principales de la imagen del logo */
 .brand_top img{
-	margin-top: 10px;
+  margin-top: 10px;
+    margin-left: 5%;
+    margin-bottom: 0;
+    width: 200px;
+    height: 80px;
+}
+
+/* Se definen las caracteristicas de la lista para esa clase topnav */
+.menu{
+  flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: #1f6191;
+    height: 100%;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s;
+    
+    
+}
+
+/* Se definen las caracteristicas del elemento de la lista para esa clase topnav */
+.menu li{
+  padding-top: 0px;
+
+}
+/* Se definen las caracteristicas de los links de la lista para esa clase topnav */
+.menu a {
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  padding: 15px 80px;
+  margin-top: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.5s;
+  border-radius: 0.5em;
+  line-height: 80px;
+}
+
+/* Se definen las caracteristicas para el cambio de color on hover */
+.menu a:hover {
+  background-color: #c5c5c5;
+  color: #0c6099;
+}
+
+.open-menu{
+  color: #0c6099;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  float: right;
+  line-height: 80px;
+
+  display: none;
+}
+
+.close-menu{
+  color: white;
+  background: none;
+  border: none;
+  font-size: 35px;
+  padding: 0 20px;
+  float: right;
+  line-height: 80px;
+
+  display: none;
+}
+
+.open-menu,
+  .close-menu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .close-menu {
+    align-self: flex-end;
+    padding: 2px 38px;
+  }
+
+  .menu_opened {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .open-menu:focus:not(:focus-visible),
+  .close-menu:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+/*---------------------------------- Parte para el Slider -----------------------------------*/
+
+.flexslider{
+  width: 80%;
+  position: relative;
+  z-index: 0;
+  margin-left: 10%;
+
+}
+
+
+
+/*---------------------------------- Parte para el Body -----------------------------------*/
+
+/* Se definen las caracteristicas para el body*/
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(imagenes/fondo.png);
+}
+
+/* Se definen las caracteristicas para los titulos, subtitulos y parrafos generales*/
+h1{
+  color: #01335c
+}
+
+h2{
+  color: #01335c
+
+}
+h3{
+  color: #01335c;
+  font-size: 20px;
+  text-align: center;
+}
+
+p{
+  color: #01335c;
+  text-align: center;
+}
+
+ .p1{
+  color: #01335c;
+  font-weight: bold;
+
+ 
+}
+
+
+
+/*---------------------------------- Parte para los contenedores -----------------------------------*/
+
+
+/* Primer contenedor */
+.content {
+  padding-top: 100px;
+  background-color: transparent;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+.content p{
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: auto;
+  flex-direction: column;
+}
+
+.content h2{
+  margin: auto;
+}
+
+/* Segundo contenedor */
+
+.container_personal{
+padding-top: 100px;
+ background-color: white;
+  overflow: auto;
+  width: 90%;
+  padding-top: 0px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+  
+  
+}
+
+.personal{
+  float: left;
+  width: 30%;
+  height: 320px;
+  background-color: white;
+  min-width: 300px;
+  margin-left: 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.personal img{
+width: 100%;
+height: 100%;
+}
+
+.personal2{
+  float: right;
+  width: 50%;
+  height: auto;
+  background-color: white;
+  min-width: 300px;
+  text-align: center;
+  overflow: hidden;
+
+}
+
+.personal2 p{
+  font-size: 20px;
+}
+
+
+
+/* Tercer contenedor */
+.container_tratamiento {
+  padding-top: 100px;
+  background-color: white;
+  width: 95%;
+  margin-left: 5%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+
+.container_tratamiento ul{
+ list-style: none;
+ margin-left: auto;
+ margin-right: auto;
+ text-align: center;
+padding-left: 0;
+ }
+
+.container_tratamiento ul li{
+
+width: 300px;
+height: 200px;
+background-color: #ddedf6;
+margin: 40px 30px;
+box-sizing: border-box;
+border: 2px solid #767b81;
+display: inline-block;
+}
+
+.container_tratamiento ul li .title{
+width: 100%;
+height: 50px;
+line-height: 50px;
+background: #3072a1;
+text-align: center;
+color: white;
+
+}
+
+
+.container_historia {
+  position: fixed;
+  margin-top: 105px;
+  background-color: white;
+  width: 70%;
+  height: 25px;
+  margin-left: 15%;
+  display: none;
+  pointer-events: none;
+}
+
+
+.nav_historia {
+  background-color: #1f6191; 
+  width: 100%;
+  height: 25px;
+  margin: auto;
+  
+}
+
+
+/* Se definen las caracteristicas de la lista para esa clase topnav */
+.nav_historia ul{
+  margin-top: 0px;
+}
+
+/* Se definen las caracteristicas del elemento de la lista para esa clase topnav */
+.nav_historia ul li{
+  display: inline-block;
+  margin-left: 10px;
+
+}
+/* Se definen las caracteristicas de los links de la lista para esa clase topnav */
+.nav_historia ul li a {
+  display: flex;
+  color: white;
+  text-align: center;
+  font-size: 17px;
+  padding: 1px 10px;
+  margin-top: 0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Se definen las caracteristicas para el cambio de color on hover */
+.nav_historia ul li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/*---------------------------------- Parte para el Footer -----------------------------------*/
+/* Style the footer */
+.footer {
+  background-color: #0C65B6;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 0;
+}
+
+.footer ul{
+  display: inline-block;
+  text-decoration: none;
+  padding-top: 0;
+  margin-top: 0;
+  margin-left: 0;
+  padding-left: 5%;
+}
+
+.footer ul li{
+  color: white;
+  padding-left: 0px;
+  font-size: 0.8em;
+  list-style: none;
+}
+
+.footer ul li a{
+  color: white;
+}
+
+
+/*---------------------------------- Parte para Whatsapp -----------------------------------*/
+
+.whatsapp{
+  position: fixed;
+  right: 3%;
+  bottom: 2%;
+}
+
+.whatsapp img{
+width: 45px;
+height: 45px;
+}
+
+}
+
+
+
+
+
+
+
+ /* ------------------------------------------------------------------------------------------------------------------------------*/
+ /* Para visualizar en celular*/
+ /* ------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 800px){
+
+  header {
+    background-color: white; 
+    width: 100%;
+    height: 102px;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  
+  /* Se define la navegación y sus características principales */
+  .topnav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    max-width: 980px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0px 2px #1f6191 ;
+     
+  }
+
+/* Se define la clase donde va a estar el logo */
+.brand_top{
+  margin-top: 5px;
+}
+
+/* Se definen las características principales de la imagen del logo */
+.brand_top img{
+  margin-top: 10px;
     margin-left: 5%;
     margin-bottom: 0;
     width: 150px;
@@ -572,7 +986,7 @@ height: 50px;
 
 /* Se definen las caracteristicas del elemento de la lista para esa clase topnav */
 .menu li{
-	padding-top: 0px;
+  padding-top: 0px;
 
 }
 /* Se definen las caracteristicas de los links de la lista para esa clase topnav */
@@ -670,27 +1084,27 @@ body {
 
 /* Se definen las caracteristicas para los titulos, subtitulos y parrafos generales*/
 h1{
-	color: #01335c
+  color: #01335c
 }
 
 h2{
-	color: #01335c
+  color: #01335c
 
 }
 h3{
-	color: #01335c;
-	font-size: 20px;
+  color: #01335c;
+  font-size: 20px;
   text-align: center;
 }
 
 p{
-	color: #01335c;
-	text-align: center;
+  color: #01335c;
+  text-align: center;
 }
 
  .p1{
-	color: #01335c;
-	font-weight: bold;
+  color: #01335c;
+  font-weight: bold;
 
  
 }
@@ -702,7 +1116,7 @@ p{
 
 /* Primer contenedor */
 .content {
-	padding-top: 100px;
+  padding-top: 100px;
   background-color: transparent;
   overflow: auto;
   display: flex;
@@ -715,14 +1129,14 @@ p{
 
 
 .content p{
-	padding-left: 5%;
-	padding-right: 5%;
-	margin: auto;
-	flex-direction: column;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: auto;
+  flex-direction: column;
 }
 
 .content h2{
-	margin: auto;
+  margin: auto;
 }
 
 /* Segundo contenedor */
@@ -735,20 +1149,20 @@ padding-top: 100px;
   padding-top: 0px;
   margin: 0 auto;
   display: flex;
-	flex-direction: column;
+  flex-direction: column;
  align-items: center;
   
   
 }
 
 .personal{
-	float: left;
-	width: 30%;
-	height: 320px;
-	background-color: white;
-	min-width: 300px;
-	margin-left: 0;
-	display:flex;
+  float: left;
+  width: 30%;
+  height: 320px;
+  background-color: white;
+  min-width: 300px;
+  margin-left: 0;
+  display:flex;
   justify-content: center;
   align-items: center;
 }
@@ -759,25 +1173,25 @@ height: 100%;
 }
 
 .personal2{
-	float: right;
-	width: 50%;
+  float: right;
+  width: 50%;
   height: auto;
-	background-color: white;
-	min-width: 300px;
-	text-align: center;
+  background-color: white;
+  min-width: 300px;
+  text-align: center;
   overflow: hidden;
 
 }
 
 .personal2 p{
-	font-size: 20px;
+  font-size: 20px;
 }
 
 
 
 /* Tercer contenedor */
 .container_tratamiento {
-	padding-top: 100px;
+  padding-top: 100px;
   background-color: white;
   width: 95%;
   margin-left: 5%;
@@ -818,8 +1232,8 @@ color: white;
 
 
 .container_historia {
-	position: fixed;
-	margin-top: 105px;
+  position: fixed;
+  margin-top: 105px;
   background-color: white;
   width: 70%;
   height: 25px;
@@ -840,13 +1254,13 @@ color: white;
 
 /* Se definen las caracteristicas de la lista para esa clase topnav */
 .nav_historia ul{
-	margin-top: 0px;
+  margin-top: 0px;
 }
 
 /* Se definen las caracteristicas del elemento de la lista para esa clase topnav */
 .nav_historia ul li{
-	display: inline-block;
-	margin-left: 10px;
+  display: inline-block;
+  margin-left: 10px;
 
 }
 /* Se definen las caracteristicas de los links de la lista para esa clase topnav */
@@ -877,8 +1291,8 @@ color: white;
 }
 
 .footer ul{
-	display: inline-block;
-	text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
   padding-top: 0;
   margin-top: 0;
   margin-left: 0;
@@ -886,23 +1300,23 @@ color: white;
 }
 
 .footer ul li{
-	color: white;
-	padding-left: 0px;
+  color: white;
+  padding-left: 0px;
   font-size: 0.8em;
   list-style: none;
 }
 
 .footer ul li a{
-	color: white;
+  color: white;
 }
 
 
 /*---------------------------------- Parte para Whatsapp -----------------------------------*/
 
 .whatsapp{
-	position: fixed;
-	right: 3%;
-	bottom: 2%;
+  position: fixed;
+  right: 3%;
+  bottom: 2%;
 }
 
 .whatsapp img{
