@@ -10,6 +10,17 @@
 <link href="estilos.css" rel="stylesheet" type="text/css"> <!-- Cargamos el CSS -->
 <script src="https://kit.fontawesome.com/27863aceee.js" crossorigin="anonymous"></script> <!-- Para poder usar iconos de fontawesomwe-->
 <script defer src="app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> <!-- Para el slider-->
+<script src="jquery.flexslider.js"></script> <!-- Para el slider-->
+
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+        touch: true,
+    });
+  });
+</script>
+
 </head>
 
 <body> <!-- Se inicia el body-->
@@ -49,15 +60,36 @@
 <div class="content"> <!-- Container -->
  
   <h3>Contamos con instalaciones y equipos de punta. </h3> <!--Titulo -->
-
-<div class="slider"> <!-- Se coloca un slider de fotos -->
-    <ul>
-        <li><img src="imagenes/img1.jpeg" alt=""></li>
-        <li><img src="imagenes/img2.jpeg" alt=""></li>
-        <li><img src="imagenes/img3.jpeg" alt=""></li>
-        <li><img src="imagenes/img2.jpeg" alt=""></li>
-    </ul>
+<!-- Se coloca un slider de fotos -->
 </div>
+
+<div class="flexslider">
+   <ul class="slides">
+       <li>
+           <img src="imagenes/slider/img1.jpeg" alt="">
+           <section class="flex_caption"></section>
+       </li>
+       <li>
+           <img src="imagenes/slider/img2.jpeg" alt="">
+           <section class="flex_caption"></section>
+       </li>
+       <li>
+           <img src="imagenes/slider/img3.jpeg" alt="">
+           <section class="flex_caption"></section>
+       </li>
+       <li>
+           <img src="imagenes/slider/img4.jpeg" alt="">
+           <section class="flex_caption"></section>
+       </li>
+       <li>
+           <img src="imagenes/slider/img5.jpeg" alt="">
+           <section class="flex_caption"></section>
+       </li>
+
+
+   </ul> 
+</div>
+
 <h3>¡La valoración es gratuita, pregunta por nuestros precios!</h3>
 
  
@@ -65,7 +97,8 @@
      <a  href='https://wa.me/573114860274?text=Hola!%20vi%20tu%20página%20web%20y%20 quisiera%20 asesoría' target="_blank"><img src="imagenes/whatsapp.png"></a> 
     </div>
 
-</div>
+
+
 
      
 
