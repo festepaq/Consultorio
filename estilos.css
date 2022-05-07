@@ -637,6 +637,16 @@ height: 50px;
     outline: none;
   }
 
+/*---------------------------------- Parte para el Slider -----------------------------------*/
+
+.flexslider{
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  margin-left: 0;
+
+}
+
 
 
 /*---------------------------------- Parte para el Body -----------------------------------*/
