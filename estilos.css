@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* Para poder usar los diferentes iconos  y definir el tipo de letra del flexslider*/
 @font-face {
   font-family: 'flexslider-icon';
   src: url('fonts/flexslider-icon.eot');
@@ -16,7 +17,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
+/* Definimos el ancla para la navegación interna */
 .ancla {padding-top: 150px; 
 }
 
@@ -95,6 +96,7 @@ header {
   color: #0c6099;
 }
 
+/* Se define el open menu para pantallas pequeñas */
 .open-menu{
   color: #175a9e;
   background: none;
@@ -104,9 +106,10 @@ header {
   float: right;
   line-height: 80px;
 
-  display: none;
+  display: none; /* No se muestra por ahora*/
 }
 
+/* Se define el close menu para pantallas pequeñas */
 .close-menu{
   color: #175a9e;
   background: none;
@@ -116,7 +119,7 @@ header {
   float: right;
   line-height: 80px;
 
-  display: none;
+  display: none; /* No se muestra por ahora*/
 }
 
 
@@ -168,6 +171,7 @@ p{
 
 /*---------------------------------- Parte para el Slider -----------------------------------*/
 
+/* Se definen las caracteristicas para el flexslider*/
 .flexslider{
   width: 60%;
   position: relative;
@@ -179,7 +183,7 @@ p{
 .slides{
   overflow: hidden;
 }
-
+/* Se definen los tamaños para las imagenes*/
 .slides img{
   width: 100%;
 }
@@ -191,6 +195,7 @@ p{
   padding: 0;
   list-style: none;
 }
+
 
 .flex-control-nav{
   width: 100%;
