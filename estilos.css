@@ -22,6 +22,82 @@
 }
 
 
+/*Estilo para el div en el que está contenido el mapa interactivo*/
+.mapa_dientes {
+	position:relative; 
+	font-size:1.15em;
+	color:#000000;
+	background-color:#DDDDDD;
+	border: 3px solid #AAAAAA;
+	box-shadow:2px 2px 5px black;
+	width: 90%;
+  height: auto;
+  max-width: 600px;
+	padding: 1%;
+	margin:auto;
+    margin-bottom:15px;
+	display:block;
+}
+/*Estilo para la imagen del mapa interactivo*/
+.mapa {
+	width: 98%;
+	display: block;
+	margin: auto;
+}
+
+/*Estilos para cada uno de los puntos en el mapa interactivo*/
+.punto1 {
+	position:absolute;
+	z-index:2;
+	width:5%;
+	bottom:62.5%;
+	left:51.5%;
+}
+.punto2 {
+	position:absolute;
+	z-index:2;
+	width:5%;
+	bottom:22%;
+	left:31%;
+}
+.punto3 {
+	position:absolute;
+	z-index:2;
+	width:5%;
+	bottom:18%;
+	left:77.5%;
+}
+.punto4 {
+	position:absolute;
+	z-index:2;
+	width:5%;
+	bottom:85%;
+	left:4.5%;
+}
+
+/*Estilo para los párrafos*/
+.p_mi {
+	font-size:1.2em;
+	color:#000000;
+	background-color:#DDDDDD;
+	width: 90%;
+    margin: auto;
+	padding: 1%;
+	display:block;
+}
+
+.imgM {
+  width: 30%;
+	max-width: 200px;
+	float:right;
+	border: 1px solid #FFFFFF;
+	box-shadow:1px 1px 4px black;
+  
+
+}
+
+
+
 /*---------------------------------- Parte para el header -----------------------------------*/
 
 /* Se define el header y sus características principales */
@@ -32,7 +108,7 @@ header {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 1;
+  z-index: 5;
 }
 
 /* Se define la navegación y sus características principales */
